@@ -1,0 +1,141 @@
+/*
+Theme Name: Arcyf-BS
+Theme URI http://arcyf.com;
+Description: Bootstrap 3 based theme 
+Version: 1
+Author:Arcyf
+*/
+
+
+@font-face {
+	font-family: KelsonSans;
+	src: url("../assets/fonts/KelsonSansReg.otf") format("opentype");
+}
+
+/*
+#navdrop{
+    background: grey;
+    padding:0px;
+    border-radius:0px;
+}
+.navbar{
+    padding: 0px;
+}
+.dropdown.open{
+    background-color:grey;
+}
+.navbar-nav > li > .dropdown-menu:before,
+.navbar-nav > li > .dropdown-menu:after{
+    width:100%;
+    background-color:grey;
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 0px solid transparent;
+    z-index: 0;
+    content: "";  
+}
+*/
+
+.navbar-ct-basic {
+  background-color: #282525; 
+  opacity :0.98;
+}
+.navbar-ct-cacti{
+  background-color: #86bc3d;
+}
+
+.navbar >.btn-cacti-green.btn-simple{
+  color:#86bc3d;
+}
+.navbar > .btn-cacti-green.btn-fill{
+  background-color: #86bc3d; 
+  border-color:#86bc3d;
+ }
+.page-scroll.active {
+ background-color:#171512; /*blackish*/
+}
+.demo-header{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	
+}
+
+/** supposed;y needed for scroll spy*/
+body{
+position:relative;
+}
+
+/**
+@media (min-width: 768px){
+	.modal-dialog {
+    width: 800px;
+
+}
+}**/
+
+/** Styles for full screen modal**/
+.fullscreen-modal .modal-content {
+    padding: 10px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+/**    text-align: center;**/
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fullscreen-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.fullscreen-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.fullscreen-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+/**
+.fullscreen-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.fullscreen-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.fullscreen-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.fullscreen-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}**/
+
+.fullscreen-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
