@@ -33,6 +33,7 @@ Email: cacti@arcyf.com
 <?php wp_footer();?>
 
 </body>
+</div><!--holder-->
 
 <!--
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>

@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <nav class="navbar navbar-ct-transparent navbar-fixed-top" role="navigation-demo" id="demo-navbar">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -84,3 +85,4 @@
         </div>
         <!-- /.container-->
     </nav>
+    

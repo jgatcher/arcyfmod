@@ -6,6 +6,7 @@
                 <h1 class="title-uppercase">PERFECTION</h1>
             </div>
         </div>
+        
         <div style="border-bottom:1px solid red" id="line"></div>
         <div class="main">
             <div class="section text-center">

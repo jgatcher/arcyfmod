@@ -15,7 +15,7 @@ get_header(); ?>
 
 
     <div class="page-header ">
-        <h3>Ridge + Media</h3>
+        <h3>Sermons</h3>
     </div>
 
 
@@ -26,7 +26,7 @@ get_header(); ?>
             
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3 post-holder">
+                    <div  class="col-md-6 col-md-offset-3 post-holder">
                         <?php the_content(); ?>
                     </div></div>
                     <?php endwhile; else: ?>

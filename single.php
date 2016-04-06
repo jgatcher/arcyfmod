@@ -15,7 +15,7 @@ get_header(); ?>
 
 
     <div class="page-header ">
-        <h3>Ridge + Media</h3>
+        <h3>Sermon</h3>
     </div>
 
 
