@@ -30,4 +30,22 @@ function b2w_theme_js(){
 }
 
 add_action('wp_enqueue_scripts','b2w_theme_js');
+
+
+function parent_template_lookup($template) {
+    global $wp_query;
+	$thePostID = $wp_query->post->ID;
+	if ( $thePostID ) {
+		$ar_ancestors = get_post_ancestors( $thePostID );
+        if($ar_ancestors){
+            $new_template = locate_template( array( 'page-'.$ar_ancestors[0].'.php' ) );
+         if ( '' != $new_template ) {
+			return $new_template ;
+         }
+   }
+	}
+
+	return $template;
+}
+add_filter( 'template_include', 'parent_template_lookup', 99 );
 ?>

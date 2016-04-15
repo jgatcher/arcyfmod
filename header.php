@@ -12,11 +12,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <?php wp_head();?>
-        <!-- 	<link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
-    <link href="assets/css/ct-paper.css" rel="stylesheet"/>
-    <link href="assets/css/demo.css" rel="stylesheet" /> 
-	<link href="assets/css/cacti.css" rel="stylesheet"/> -->
-
+  
         <!--     Fonts and icons     -->
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -36,10 +32,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="http://arcyf.com">
+                <a href="<?php bloginfo('wpurl')?>">
                     <div class="logo-container">
                         <div class="logo">
-                            <img src="assets/paper_img/new_logo.png" alt="Cacti Logo">
+                                                        <img src="<?php bloginfo('template_directory'); ?>/assets/paper_img/new_logo.png" alt="ARCYF">
                         </div>
                         <div class="brand">
 
@@ -53,32 +49,34 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <li class="page-scroll">
-                        <a href="#faq" class="btn btn-danger btn-simple">The Gospel</a>
+                        <a href="<?php bloginfo('wpurl');?>?page_id=1770" class="btn btn-danger btn-simple">The Gospel</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#sermon" class="btn btn-danger btn-simple">Media</a>
+                        <a href="<?php bloginfo('wpurl');?>?page_id=376" class="btn btn-danger btn-simple">Media</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#how" class="btn btn-danger btn-simple">Blog</a>
+                        <a href="<?php bloginfo('wpurl');?>?page_id=393" class="btn btn-danger btn-simple">Blog</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle btn btn-simple btn-warning" data-toggle="dropdown" aria-expanded="true">Dropdown <b class="caret"></b></a>
+                        <a href="#" id="plus-button" class="dropdown-toggle btn btn-simple " data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus"></i></a>
+                        
                         <!--                                  You can add classes for different colours on the next element -->
                         <ul id="navdrop" class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-header">Dropdown header</li>
-                            <li><a href="">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+<!--                            <li class="dropdown-header">Dropdown header</li>-->
+                            <li><a href="">Resources</a></li>
+                            <li><a href="#">Missions</a></li>
+                            <li><a href="#">Camps + Conferences </a></li>
+                            <li><a href="#">Ministries</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+                            <li><a href="#">Giving</a></li>
                         </ul>
                     </li>
 
+<!--
                     <li>
                         <a href="#team" class="btn btn-danger btn-fill cacti-action">Connect</a>
                     </li>
+-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

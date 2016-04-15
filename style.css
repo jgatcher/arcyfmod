@@ -10,11 +10,99 @@ Author:Arcyf
     font-family: KelsonSans;
     src: url("../assets/fonts/KelsonSansReg.otf") format("opentype");
 }
+#plus-button{
+    color: #9B7BFB;
+}
+.front{}
+.back{
+        position: absolute;
+    top: 0px;
+    background-color: pink;
+    display: none;
+}
+.box-heading {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    background-color: grey;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+.box-body{
+    padding: 20px;
+    background-color: grey;
+    color: whitesmoke;
+    font: 1.5em;
+    
+}
+.featured-holder {
+    padding 10px;
+   
+}
 
-.sermon-title{
+/*
+.front-box:hover {
+    background: rgba(255, 255, 0, 0.35);
+}
+*/
+
+/*
+.front-box:after {
+    background: inherit;
+    position: absolute;
+    top: 0px;
+    display: block;
+    width: 300px;
+    height: 300px;
+    content: " ";
+}
+*/
+
+.front-box {
+    background: transparent;
+    transition: 1s;
+}
+
+.hoverable {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    display: table;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: auto;
+    opacity: 0;
+    transition: .5s;
+}
+
+.hoverable:hover {
+    opacity: 1;
+}
+
+.sermon-title {
     text-transform: uppercase;
     font-size: 24px;
 }
+
+ul.media-choice {}
+
+.media-choice li {
+    text-decoration: none;
+    display: block;
+    border: 2px solid;
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 10px 10px;
+}
+
+.media-choice li:hover {
+    background-color: gray;
+    transition: ease-in .5s;
+}
+
+
 /*
 #navdrop{
     background: grey;
@@ -72,6 +160,7 @@ Author:Arcyf
 
 /** supposed;y needed for scroll spy*/
 
+
 /**
  * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
  * 
@@ -80,42 +169,70 @@ Author:Arcyf
  *
  * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
  */
+
 html,
 body {
-	margin:0;
-	padding:0;
-	height:100%;
-    background:#ededed;
-}
-.wrapper {
-	min-height:100%;
-	position:relative;
-}
-.page-header {
-    margin-top: 100px;
-    margin-bottom: 0px;
-    padding-top:30px ;
-    padding-right:10px;
-    padding-left:10px;
-    padding-bottom:10px;
-	background:#ededed;
-	background-image:  url('file:///C:/Users/User/root/xampp/htdocs/wordpress/wp-content/themes/arcyf/assets/paper_img/media.jpg');
-}
-.content {
-	padding-bottom:190px; /* Height of the footer element */
-    background:white;
-}
-footer.footer-demo {
-	width:100%;
-	height:190px;
-	position:absolute;
-	bottom:0;
-	left:0;
-}
-.post-holder{
-    padding-top:20px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #ededed;
 }
 
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    bottom: 0px;
+}
+
+.page-header {
+    position: relative;
+    margin: 0px;
+    height: 250px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background: #ededed;
+    background-image: url('file:///C:/Users/User/root/xampp/htdocs/wordpress/wp-content/themes/arcyf/assets/paper_img/media.jpg');
+}
+
+.content {
+    padding-bottom: 190px;
+    /* Height of the footer element */
+    background: white;
+}
+
+footer.footer-demo {
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.post-holder {
+    padding-bottom: 80px
+}
+.post-info{
+    margin-top:60px;
+    margin-bottom: 20px;
+}
+.post-title{
+    font-size:2em;
+    font-weight:bold;
+    display: inline-block;
+    
+}
+.post-meta, .post-meta a{
+    color:#9b9696;
+}
+.front-box-img{
+    text-align: center;
+}
 /**
 @media (min-width: 768px){
 	.modal-dialog {
@@ -150,43 +267,6 @@ footer.footer-demo {
 .fullscreen-modal .modal-content .item-details {
     margin: 30px 0;
 }
-
-
-/**
-.fullscreen-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.fullscreen-modal .close-modal:hover {
-    opacity: .3;
-}
-
-.fullscreen-modal .close-modal .lr {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.fullscreen-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}**/
 
 .fullscreen-modal .modal-backdrop {
     display: none;

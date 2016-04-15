@@ -6,7 +6,7 @@
                 <h1 class="title-uppercase">PERFECTION</h1>
             </div>
         </div>
-        
+
         <div style="border-bottom:1px solid red" id="line"></div>
         <div class="main">
             <div class="section text-center">
@@ -38,17 +38,19 @@
                 );
                 $my_query = new WP_Query( $args );
 						while ( $my_query->have_posts() ) : ?>
-                            <div class="col-md-12">
-                                <?php $my_query->the_post();$data=get_post_meta($post->ID,'sermon_video','true');
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <?php $my_query->the_post();$data=get_post_meta($post->ID,'sermon_video','true');
                                 
                                     echo $data;
                                 ?>
-                            </div>
-                            <div class="row" style="padding-bottom:60px">
-                                <div class="col-md-2 col-md-offset-5">
-                                    <a href="<?php the_permalink()?>">
-                                        <?php the_title()?>
-                                    </a>
+                                </div>
+                                <div class="row" style="padding-bottom:60px">
+                                    <div class="col-md-2 col-md-offset-5">
+                                        <a href="<?php the_permalink()?>">
+                                            <?php the_title()?>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -71,7 +73,28 @@
                     <div class="row">
                         <div style="background-color:grey" class="col-md-4 col-md-offset-2 ">asd</div>
                         <div style="background-color:red" class="col-md-2 ">dfg</div>
-                        <div style="background-color:blue" class="col-md-2 ">asddfg</div>
+                        <div style="background-color:blue" class="col-md-2 ">
+                            <div class="row" style="padding-top:60px">
+                                <?php 
+
+                    $args = array(
+                        'posts_per_page'=>1,
+                        'order'=>'desc'
+                    
+                );
+                $my_query = new WP_Query( $args );
+						while ( $my_query->have_posts() ) : ?>
+                                    <div class="col-md-3 col-offset-md-3">
+                                        <?php $my_query->the_post();
+                                
+                                  the_post_thumbnail('medium',array('class'=>'img-circle'));
+                                ?>
+                                    </div>
+
+
+                                    <?php endwhile; ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="team" class="section section-nude section-with-space">
