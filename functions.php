@@ -1,5 +1,5 @@
 <?php
-include_once(ABSPATH .'wp-content\themes\post-types.php');
+include_once(ABSPATH .'wp-content/themes/post-types.php');
 function b2w_theme_styles(){
 
 	wp_enqueue_style('bootstrap_css',get_template_directory_uri() . '/bootstrap3/css/bootstrap.min.css');
