@@ -20,7 +20,7 @@ Email: cacti@arcyf.com
         
     </div>
 </footer>
-</div>
+
 
 <?php wp_footer();?>
 

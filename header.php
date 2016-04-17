@@ -17,11 +17,12 @@
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <div class="wrapper">
+    
     <nav class="navbar navbar-ct-transparent navbar-fixed-top" role="navigation-demo" id="demo-navbar">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,10 +36,10 @@
                 <a href="<?php bloginfo('wpurl')?>">
                     <div class="logo-container">
                         <div class="logo">
-                                                        <img src="<?php bloginfo('template_directory'); ?>/assets/paper_img/new_logo.png" alt="ARCYF">
+                            <img src="<?php bloginfo('template_directory'); ?>/assets/paper_img/new_logo.png" alt="ARCYF">
                         </div>
                         <div class="brand">
-
+                            Ridge Youth
                         </div>
                     </div>
                 </a>

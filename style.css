@@ -6,12 +6,74 @@ Version: 1
 Author:Arcyf
 */
 
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+#editorial{
+    margin-bottom:10px;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.more-btn{
+    width:300px;
+    border-radius:10px;
+    border-color:#aca5a5;
+        color:#aca5a5;
+    margin-bottom: 10px;
+    
+}
+.more-btn:hover{
+    background-color: #aca5a5;
+    border-color:#aca5a5;
+}
+.box-text{
+    font-size: 1.4em;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+.brand{
+    padding-top:9px;
+   
+}
+.logo-container .brand{
+      min-width:100px;
+     color:#fa7513;
+}
+.navbar-header{
+    height:69px;
+}
+.logo-container{
+    margin-top:8px;
+}
+.logo-container .logo{
+    border:0px;width:25px;
+}
+.logo{
+    border:0px;
+    margin-top:12px;
+    margin-left:5px;
+}
 @font-face {
     font-family: KelsonSans;
     src: url("../assets/fonts/KelsonSansReg.otf") format("opentype");
 }
+.title-uppercase{
+    font-size:4.0em;
+    font-family: 'Montserrat';
+}
+.title-sub-lowercase{
+    font-size:1.5em;
+    font-family: 'Monteserrat';
+}
+
+
 #plus-button{
-    color: #9B7BFB;
+    color: #1f1639;
 }
 .front{}
 .back{
@@ -103,30 +165,7 @@ ul.media-choice {}
 }
 
 
-/*
-#navdrop{
-    background: grey;
-    padding:0px;
-    border-radius:0px;
-}
-.navbar{
-    padding: 0px;
-}
-.dropdown.open{
-    background-color:grey;
-}
-.navbar-nav > li > .dropdown-menu:before,
-.navbar-nav > li > .dropdown-menu:after{
-    width:100%;
-    background-color:grey;
-    border-bottom: 0px solid transparent;
-    border-left: 0px solid transparent;
-    border-right: 0px solid transparent;
-    border-top: 0px solid transparent;
-    z-index: 0;
-    content: "";  
-}
-*/
+
 
 .navbar-ct-basic {
     background-color: #282525;
@@ -151,12 +190,29 @@ ul.media-choice {}
     /*blackish*/
 }
 
-.demo-header {
+
+.demo-header{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-color: #494eb9;
+    background-position: center top;
+     background-image: url('http://localhost:8282/wordpress/wp-content/themes/arcyf/assets/paper_img/golden-perfection2.jpg');
+    height:100%;
 }
-
+.demo-header-image{
+    background-image: url('wp-content/themes/arcyf/paper_img/galaxy-perfection.jpg');
+}
+.demo-header .motto{
+    color: #FFFFFF;
+    padding-top: 0;
+    text-align: center;
+    z-index: 3;
+}
+.demo-header .motto h3{
+    margin-bottom: 0;
+}
 
 /** supposed;y needed for scroll spy*/
 
@@ -170,9 +226,11 @@ ul.media-choice {}
  * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
  */
 
-html,
+html{
+    height:100%;
+}
 body {
-    margin: 0;
+    margin-bottom: 190px;
     padding: 0;
     height: 100%;
     background: #ededed;
@@ -188,18 +246,21 @@ body {
     bottom: 0px;
 }
 
+.full-page-header {
+    position: relative;
+    margin: 0px;
+    height: 100%;
+    background: #ededed;
+    background-image: url('wp-content/themes/arcyf/assets/paper_img/galaxy-perfection.jpg');
+}
 .page-header {
     position: relative;
     margin: 0px;
-    height: 250px;
-    padding-top: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    height: 40%;
     background: #ededed;
-    background-image: url('file:///C:/Users/User/root/xampp/htdocs/wordpress/wp-content/themes/arcyf/assets/paper_img/media.jpg');
+    background-image: url('wp-content/themes/arcyf/assets/paper_img/galaxy-perfection.jpg');
+    
 }
-
 .content {
     padding-bottom: 190px;
     /* Height of the footer element */
@@ -207,15 +268,17 @@ body {
 }
 
 footer.footer-demo {
-    width: 100%;
-    height: 190px;
-    position: absolute;
-    bottom: 0;
+  background-color:#000000;
+    position: relative;
     left: 0;
+    bottom: 0;
+    height: 190px;
+    width: 100%;
 }
 
 .post-holder {
     padding-bottom: 80px
+        padding-top:20px;
 }
 .post-info{
     margin-top:60px;
