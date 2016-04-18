@@ -198,11 +198,11 @@ ul.media-choice {}
     background-size: cover;
     background-color: #494eb9;
     background-position: center top;
-     background-image: url('http://localhost:8282/wordpress/wp-content/themes/arcyf/assets/paper_img/golden-perfection2.jpg');
+     background-image: url('/wp-content/themes/arcyf/assets/paper_img/golden-perfection2.jpg');
     height:100%;
 }
 .demo-header-image{
-    background-image: url('wp-content/themes/arcyf/paper_img/galaxy-perfection.jpg');
+    background-image: url('/wp-content/themes/arcyf/paper_img/galaxy-perfection.jpg');
 }
 .demo-header .motto{
     color: #FFFFFF;
@@ -251,14 +251,14 @@ body {
     margin: 0px;
     height: 100%;
     background: #ededed;
-    background-image: url('wp-content/themes/arcyf/assets/paper_img/galaxy-perfection.jpg');
+    background-image: url('/wp-content/themes/arcyf/assets/paper_img/galaxy-perfection.jpg');
 }
 .page-header {
     position: relative;
     margin: 0px;
     height: 40%;
     background: #ededed;
-    background-image: url('wp-content/themes/arcyf/assets/paper_img/galaxy-perfection.jpg');
+    background-image: url('/wp-content/themes/arcyf/assets/paper_img/galaxy-perfection.jpg');
     
 }
 .content {
