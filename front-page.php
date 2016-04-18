@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-    <div class="demo-header .demo-header-image ">
+    <div class="full-page-header .demo-header-image ">
         <div class="motto">
             <div class="title-sub-lowercase">striving unto</div>
             <div class="title-uppercase">PERFECTION</div>
