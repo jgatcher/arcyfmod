@@ -50,7 +50,7 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <li class="page-scroll">
-                        <a href="<?php bloginfo('wpurl');?>?page_id=1770" class="btn btn-danger btn-simple">The Gospel</a>
+                        <a href="<?php bloginfo('wpurl');?>/the-gospel" class="btn btn-danger btn-simple">The Gospel</a>
                     </li>
                     <li class="page-scroll">
                         <a href="<?php bloginfo('wpurl');?>?page_id=376" class="btn btn-danger btn-simple">Media</a>
