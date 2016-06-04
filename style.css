@@ -191,7 +191,7 @@ ul.media-choice {}
 }
 
 .header-image{
-    background-image: url('/wp-content/themes/arcyf/paper_img/golden-perfection3.jpg');
+    background-image: url('/wp-content/themes/arcyfmod/paper_img/golden-perfection3.jpg');
     
 }
 .full-header .motto, flex-full-header .motto{
@@ -214,11 +214,11 @@ ul.media-choice {}
     background-size: cover;
     background-color: #494eb9;
     background-position: center top;
-     background-image: url('/wp-content/themes/arcyf/assets/paper_img/golden-perfection2.jpg');
+     background-image: url('http://old.arcyf.cpm/wp-content/themes/arcyfmod/assets/paper_img/golden-perfection3.jpg');
     height:100%;
 }
 .header-image{
-    background-image: url('/wp-content/themes/arcyf/paper_img/golden-perfection3.jpg');
+    background-image: url('http://old.arcyf.com/wp-content/themes/arcyfmod/paper_img/golden-perfection3.jpg');
 }
 
 /*Spyscroll doc says body needs to be relative..but i have't had any issues yet*/
@@ -250,14 +250,14 @@ body {
     height: 100%;
     background: black;
     background-position-x:center;
-    background-image: url('/wp-content/themes/arcyf/assets/paper_img/golden-perfection3.jpg');
+    background-image: url('/wp-content/themes/arcyfmod/assets/paper_img/golden-perfection3.jpg');
 }
 .page-header {
     position: relative;
     margin: 0px;
     height: 40%;
     background: #ededed;
-    background-image: url('/wp-content/themes/arcyf/assets/paper_img/golden-perfection3.jpg');
+    background-image: url('/wp-content/themes/arcyfmod/assets/paper_img/golden-perfection3.jpg');
     
 }
 .content {

@@ -24,7 +24,11 @@
 <body>
     
     <nav class="navbar navbar-ct-transparent navbar-fixed-top" role="navigation-demo" id="demo-navbar">
-        <div class="container">
+       <?php 
+  // Fix menu overlap bug..
+  if ( is_admin_bar_showing() ) echo '<div style="min-height: 28px;"></div>'; 
+?> 
+       <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
@@ -53,10 +57,10 @@
                         <a href="<?php bloginfo('wpurl');?>/the-gospel" class="btn btn-danger btn-simple">The Gospel</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?php bloginfo('wpurl');?>?page_id=376" class="btn btn-danger btn-simple">Media</a>
+                        <a href="<?php bloginfo('wpurl');?>/media" class="btn btn-danger btn-simple">Media</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="<?php bloginfo('wpurl');?>?page_id=393" class="btn btn-danger btn-simple">Blog</a>
+                        <a href="<?php bloginfo('wpurl');?>/blog" class="btn btn-danger btn-simple">Blog</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" id="plus-button" class="dropdown-toggle btn btn-simple " data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus"></i></a>

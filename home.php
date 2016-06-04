@@ -23,7 +23,7 @@ get_header(); ?>
     <div class="content">
         <div class="container">
     
-        <?php echo do_shortcode("[post_grid id='1604']"); ?>
+        <?php echo do_shortcode("[post_grid id='1785']"); ?>
         </div>
 
     </div>

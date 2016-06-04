@@ -13,7 +13,7 @@
         <div class="section text-center">
             <div class="container">
                 <?php
-                        $page = new WP_Query('pagename=Home');
+                        $page = new WP_Query('pagename=front');
                         $page->the_post();
                     ?>
                     <h4><?php the_content(); ?></h4>
@@ -112,8 +112,8 @@
 
                     $args3 = array(
                         'posts_per_page'=>1,
-                        'post_type'=>'events',
-                        'tax_query'=>array(array('taxonomy'=>'category','terms'=>'featured','field'=>'slug','operator'=>'NOT_IN'))
+                        'post_type'=>'events','order'=>'desc',
+                        'tax_query'=>array(array('taxonomy'=>'category','terms'=>'featured','field'=>'slug','operator'=>'NOT IN'))
                     
                 );
                 $my_query = new WP_Query( $args3 );
@@ -140,7 +140,7 @@
 
                     $args4 = array(
                         'posts_per_page'=>1,
-                        'order'=>'desc','tax_query'=>array(array('taxonomy'=>'category','terms'=>'featured','field'=>'slug','operator'=>'NOT_IN'))
+                        'order'=>'desc','tax_query'=>array(array('taxonomy'=>'category','terms'=>'featured','field'=>'slug','operator'=>'NOT IN'))
                     
                 );
                 $my_query = new WP_Query( $args4 );
