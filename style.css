@@ -214,11 +214,11 @@ ul.media-choice {}
     background-size: cover;
     background-color: #494eb9;
     background-position: center top;
-     background-image: url('http://old.arcyf.cpm/wp-content/themes/arcyfmod/assets/paper_img/golden-perfection3.jpg');
+     background-image: url('./assets/paper_img/golden-perfection3.jpg');
     height:100%;
 }
 .header-image{
-    background-image: url('http://old.arcyf.com/wp-content/themes/arcyfmod/paper_img/golden-perfection3.jpg');
+    background-image: url('./assets/paper_img/golden-perfection3.jpg');
 }
 
 /*Spyscroll doc says body needs to be relative..but i have't had any issues yet*/

@@ -173,10 +173,17 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-2">
+                                 <?php $args5 = array('post_type'=>'site_post',
+                                       'posts_per_page'=>1,'order'=>'desc','tax_query'=>array(array('taxonomy'=>'category','terms'=>'editorial','field'=>'slug'))
+                                      );
+                                $my_query = new WP_Query( $args5 );
+						while ( $my_query->have_posts() ) : ?>
+
+                                <?php $my_query->the_post();?>
                                 <div id="editorial">
-                                    <span class="box-heading">April  @ Ridge</span>
+                                    <span class="box-heading"><?php the_title();?></span>
                                     <div class="box-body">
-                                        Philippians 3:14 - I press toward the mark for the prize of the high calling of God in Christ Jesus. Join us this month as we look into what it takes to strive unto perfection. What really goes into striving? Can you and I strive as we need to? What kind of commitment does it take? Get answers to these questions and more... Topics treated at service will include 'The Simple Things' and other related topics. For fellowship we will have more discussions on God's purpose for striving in our lives and our monthly School of the Spirit at the end of the month.
+                                       <?php the_content();endwhile; ?>
                                     </div>
 
 
@@ -187,19 +194,21 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-2">
-                                <div id="week-card">
-                                    <div id="editorial">
-                                        <span class="box-heading">Weekly Meetings</span>
+                                   <?php $args6= array('post_type'=>'site_post',
+                                       'posts_per_page'=>1,'order'=>'desc','tax_query'=>array(array('taxonomy'=>'category','terms'=>'weekly','field'=>'slug'))
+                                      );
+                                $my_query = new WP_Query( $args6);
+						while ( $my_query->have_posts() ) : ?>
+
+                                <?php $my_query->the_post();?>
+                                <div id="info-card">
+                                    
+                                    <span class="box-heading"><?php the_title()?></span>
                                         <div class="box-body">
                                             <div class="front">
-                                                Monday : Prayer Meeting 630-730 MPH
-                                                <br> Wednesday : Anaviosi 630-730 Main Auditorium
-                                                <br> Saturday: Music + Drama Ministries
-                                                <br> Sunday Morning : Youth Service 10-12 MPH
-                                                <br> Sunday Morning : Adult Service 10-12 Main Auditorium
-                                                <br> Sunday Afternoon : Youth Fellowship 330-600pm MPH
-                                                <br>
+                                               <?php the_content()?>
                                             </div>
+                                            <?php endwhile;?>
                                             <div class="back">
                                                 <h4>Area Fellowships</h4> Labone
                                                 <br> Legon
@@ -209,10 +218,6 @@
 
                                             </div>
                                         </div>
-
-
-                                    </div>
-
                                 </div>
                             </div>
 

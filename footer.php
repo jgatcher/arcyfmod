@@ -6,15 +6,15 @@
 			<br>
 					CONTACT US<br>
 Accra Ridge Church, Victoria Borg, Accra
-Next to Kempinski Hotel and opposite the Children’s Park <br>Tel: +233 (0)26 550 4936/ +233 (0)57 090 8795<br>
-Email: cacti@arcyf.com
+Next to Kempinski Hotel and opposite the Children’s Park 
+Email: support@arcyf.com
 			</div>
 		</div>
 		<div class="row">
 			<div class="copyright">
 			   <a href="#">
-							CACTI
-						</a> &copy; 2016,Ridge Youth Accra
+							
+						</a> &copy; <?php echo date("Y") ?>, Ridge Youth 
 			</div>
 		</div>
         
