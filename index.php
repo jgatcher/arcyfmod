@@ -41,8 +41,10 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <?php $my_query->the_post();$data=get_post_meta($post->ID,'sermon_video','true');
-                                
+                                   
                                     echo $data;
+					print_r($post);
+echo "where is this";
                                 ?>
                                 </div>
                                 <div class="row" style="padding-bottom:60px">

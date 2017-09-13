@@ -64,11 +64,11 @@ Author:Arcyf
 }
 .title-uppercase{
     font-size:4.0em;
-    font-family: 'Montserrat';
+    font-family: 'Pacifico';
 }
 .title-sub-lowercase{
-    font-size:1.5em;
-    font-family: 'Monteserrat';
+    font-size:5.5em;
+    font-family: 'Pacifico';
 }
 
 
@@ -191,7 +191,7 @@ ul.media-choice {}
 }
 
 .header-image{
-    background-image: url('./assets/paper_img/golden-perfection3.jpg');
+    background-image: url('./assets/paper_img/mastery-in-service2.jpg');
     
 }
 .full-header .motto, flex-full-header .motto{
@@ -214,7 +214,7 @@ ul.media-choice {}
     background-size: cover;
     background-color: #494eb9;
     background-position: center top;
-     background-image: url('./assets/paper_img/golden-perfection3.jpg');
+     background-image: url('./assets/paper_img/mastery-in-service2.jpg');
     height:100%;
 }
 .header-image{
@@ -250,7 +250,7 @@ body {
     height: 100%;
     background: black;
     background-position-x:center;
-    background-image: url('./assets/paper_img/golden-perfection3.jpg');
+    background-image: url('./assets/paper_img/mastery-in-service2.jpg');
 }
 .page-header {
     position: relative;

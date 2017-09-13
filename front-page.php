@@ -3,8 +3,8 @@
 
     <div class="full-page-header header-image ">
         <div class="motto">
-            <div class="title-sub-lowercase">striving unto</div>
-            <div class="title-uppercase">PERFECTION</div>
+            <div class="title-sub-lowercase">Mastery in Service</div>
+          <!--  <div class="title-uppercase">SERVICE</div>-->
         </div>
     </div>
 
@@ -44,9 +44,13 @@
                 $my_query = new WP_Query( $args1 );
 						while ( $my_query->have_posts() ) : ?>
                         <div class="embed-responsive embed-responsive-16by9 col-md-10 col-md-offset-1">
-                            <?php $my_query->the_post();$data=get_post_meta($post->ID,'sermon_video','true');
-                                
-                                    echo $data;
+                            <?php $my_query->the_post();
+				$data=get_post_meta($post->ID,'sermon_video','true');
+                                if(empty($data)|| $data==NULL){
+				  render_sermon_image('large');
+			        }else{
+                                   echo $data;
+                                 }
                                 ?>
                         </div>
                         <div class="row" style="padding-bottom:60px">
