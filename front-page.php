@@ -96,7 +96,7 @@
                                         <div class="box-text">
                                             <?php echo get_the_title()?>
                                         </div>
-                                        <div class="more-btn btn btn-warning"> More </div>
+                                        <div class="more-btn btn btn-warning"> <?php    echo "<a class='text-center' href='http:arcyf.com/events-encore'>More </a>"; ?></div>
                                         <?php endwhile; ?>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                                     <div class="box-text">
                                         <?php echo get_the_title()?>
                                     </div>
-                                    <div class="more-btn btn btn-warning"> Upcoming Event</div>
+                                    <div class="more-btn btn btn-warning"> <?php echo "<a class='text-center' href='".get_permalink()."'>Upcoming Event</a>"; ?></div>
 
 
                                     <?php endwhile; ?>
@@ -150,7 +150,7 @@
                                  echo "<a class='text-center' href='".get_permalink()."'>".get_the_post_thumbnail(get_the_ID(),'medium',array('class'=>'center-block img-responsive'))."</a>";
                                 ?>
 <div class="box-text"><?php echo get_the_title()?></div>
-                            <div class="more-btn btn btn-warning"> Latest Post </div>
+                            <div class="more-btn btn btn-warning"> <?php echo "<a class='text-center' href='".get_permalink()."'>Latest Post</a>"; ?> </div>
 
 
                                     <?php endwhile; ?>
