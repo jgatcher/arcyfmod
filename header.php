@@ -21,6 +21,18 @@
         <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Monoton|Pacifico|Reenie+Beanie|Sacramento|Tangerine" rel="stylesheet">	
+<style>
+
+#nav-menu-btn{
+    color: #ffffff;
+    border: 2px;
+    border-style: solid;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transform: translateY(3px);
+    
+}
+</style>
 </head>
 
 <body>
@@ -65,17 +77,17 @@
                         <a href="<?php bloginfo('wpurl');?>/blog" class="btn btn-danger btn-simple">Blog</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" id="plus-button" class="dropdown-toggle btn btn-simple " data-toggle="dropdown" aria-expanded="true"><i class="fa fa-plus"></i></a>
+                        <a href="#" class="dropdown-toggle btn nav-menu-btn " data-toggle="dropdown" aria-expanded="true"><i class="fa fa-bars" aria-hidden="true"></i></a>
                         
                         <!--                                  You can add classes for different colours on the next element -->
-                        <ul id="navdrop" class="dropdown-menu dropdown-menu-right">
-<!--                            <li class="dropdown-header">Dropdown header</li>-->
-                            <li><a href="">Resources</a></li>
-                            <li><a href="#">Missions</a></li>
-                            <li><a href="#">Camps + Conferences </a></li>
-                            <li><a href="#">Ministries</a></li>
+                        <ul id="navdrop" class="nav-menu dropdown-menu dropdown-menu-right">
+<!--                           <!-- <li class="dropdown-header">Dropdown header</li>-->
+                            <!-- <li><a href="<?php bloginfo('wpurl');?>/blog">Resources</a></li> -->
+                            <li><a href="<?php bloginfo('wpurl');?>/calendar">Calendar</a></li>
+                            <li><a href="<?php bloginfo('wpurl');?>/camps-conferences">Camps + Conferences </a></li>
+                            <li><a href="<?php bloginfo('wpurl');?>/about-us">About us</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">Giving</a></li>
+                            <li><a href="https://twitter.com/rcyfgh">@rcyfgh<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
                         </ul>
                     </li>
 

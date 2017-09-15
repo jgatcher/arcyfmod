@@ -11,11 +11,14 @@
  * @since Twenty Fifteen 1.0
  */
 
-get_header(); ?>
+get_header(); 
+global $post;
+
+?>
 
 
     <div class="page-header ">
-        <h3>Ridge + Media</h3>
+        <h3 class="page-title"><?php echo $post->post_title;?></h3>
     </div>
 
 
